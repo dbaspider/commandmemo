@@ -1,0 +1,27 @@
+git tag <tagname> -a
+
+git tag Baseline_1.1.3 -a
+
+git push origin --tags
+
+git tag
+
+https://stackoverflow.com/questions/18216991/create-a-tag-in-a-github-repository
+https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-tag
+
+https://docs.github.com/en/github/committing-changes-to-your-project/creating-and-editing-commits/changing-a-commit-message
+If the commit only exists in your local repository and has not been pushed to GitHub, 
+you can amend the commit message with the git commit --amend command.
+
+https://devconnected.com/how-to-delete-local-and-remote-tags-on-git/
+
+$ git tag -d 1.0.12
+Deleted tag 'v1.0' (was 808b598)
+
+git push --delete origin 1.0.12
+
+$ git tag -l
+1.0.12
+Baseline_1.0.12
+Baseline_1.0.13
+Baseline_1.1.1
