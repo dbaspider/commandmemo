@@ -5,40 +5,28 @@ CPU abilist:
 adb shell getprop ro.product.cpu.abilist
 arm64-v8a,armeabi-v7a,armeabi
 
-
 adb devices
 List of devices attached
-8WXNW18703000116        device
+xxxxxxxxxxxxxxxx        device
 
-adb install proxyhms.apk
-Performing Streamed Install
-Success
+adb install xxx.apk
 
-adb shell pm path com.ss.android.article.lite
-package:/data/app/com.ss.android.article.lite-X1VM4jf-kWWnO6-6Sv3Buw==/base.apk
+adb shell pm path com.xxx
 
-adb pull /data/app/com.ss.android.article.lite-X1VM4jf-kWWnO6-6Sv3Buw==/base.apk com.ss.android.article.lite
-/data/app/com.ss.android.article.lite-X1VM4jf-kWWnO6-6Sv3B...le pulled, 0 skipped. 19.2 MB/s (10777156 bytes in 0.536s)
+adb pull /data/app/xxx
 
 adb shell
-run-as com.your.packagename` 
-cp /data/data/com.app.packagename/
+run-as com.your.packagename
+cp /data/data/com.your.packagename/
 
-adb logcat --pid=$(adb shell pidof -s com.zhouwei.circleindicatorview)
-
+adb logcat --pid=$(adb shell pidof -s com.xxx)
 adb logcat --pid=$(adb shell pidof -s com.huawei.browser)
-
-adb logcat -v time > a1.txt
-
 adb logcat --pid=`adb shell pidof -s com.huawei.browser`
 
+adb shell "logcat --pid=$(pidof -s com.example.myapplication)"
 adb shell pidof 'com.example.debug'
 
-
-adb shell "logcat --pid=$(pidof -s com.example.myapplication)"
-
 adb logcat -v time > time1.log
-
 adb logcat -v threadtime > tt.txt
 adb logcat -v threadtime
 
