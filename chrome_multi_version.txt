@@ -1,0 +1,5 @@
+下载, 并解压：
+https://www.chromedownloads.net/chrome64win/
+
+快捷方式上命令行中指定用户文件保存位置启动即可：
+--user-data-dir="D:\BaiduNetdiskDownload\Chrome-bin\user_data"
