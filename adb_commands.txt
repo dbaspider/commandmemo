@@ -32,3 +32,10 @@ adb logcat -v threadtime
 
 https://stackoverflow.com/questions/6854127/filter-logcat-to-get-only-the-messages-from-my-application-in-android
 https://www.jianshu.com/p/5e00094417bc adb shell logcat 命令
+
+adb logcat --pid=$(adb shell pidof -s com.yc.pts)
+adb logcat --pid=`adb shell pidof -s com.yc.pts`
+
+adb shell pidof -s com.yc.pts
+adb logcat --pid=xxx 
+
