@@ -32,3 +32,7 @@ adb logcat -v threadtime
 
 https://stackoverflow.com/questions/6854127/filter-logcat-to-get-only-the-messages-from-my-application-in-android
 https://www.jianshu.com/p/5e00094417bc adb shell logcat 命令
+
+根据 pid 查看日志：
+adb shell pidof 'com.github.lzyzsd.jsbridge.example'
+adb shell logcat --pid=25334
