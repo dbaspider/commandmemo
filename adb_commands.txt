@@ -39,3 +39,6 @@ adb logcat --pid=`adb shell pidof -s com.yc.pts`
 adb shell pidof -s com.yc.pts
 adb logcat --pid=xxx 
 
+通过ADB快速定位 Android APP 当前页面（Activity / Fragment） https://www.jianshu.com/p/83888c369eca
+
+adb shell "dumpsys window w | grep name="
