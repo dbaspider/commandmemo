@@ -39,6 +39,20 @@ adb logcat --pid=`adb shell pidof -s com.yc.pts`
 adb shell pidof -s com.yc.pts
 adb logcat --pid=xxx 
 
+D:\>adb shell dumpsys window | grep mCurrentFocus
+
+D:\>adb shell dumpsys window
+
+D:\>adb shell dumpsys activity | grep "mFocusedActivity"
+	
+adb shell dumpsys activity | grep "mFocusedWindow"
+
+adb shell dumpsys activity | grep "mFocusedApp"
+
+adb shell "dumpsys window w | grep name="
+
+adb shell "dumpsys activity services com.tencent.mm"
+
 通过ADB快速定位 Android APP 当前页面（Activity / Fragment） https://www.jianshu.com/p/83888c369eca
 
 adb shell "dumpsys window w | grep name="
